@@ -1,0 +1,7 @@
+DROP PROCEDURE IF EXISTS insertarUsuario;
+DELIMITER//
+CREATE PROCEDURE insertarUsuario(IN nombres_ varchar(45), IN apellidos_ varchar(45))
+BEGIN
+	INSERT INTO usuario (nombres, apellidos) VALUES (nombres_, apellidos_);
+END;
+//
